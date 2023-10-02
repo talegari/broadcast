@@ -34,10 +34,10 @@ m1
 m2 = matrix(7:9, nrow = 1)
 m2
 
-# without `broadbast`
+# without `broadcast`
 m1 + m2
 
-# with broadcast
+# with `broadcast`
 m1 %a+% m2
 ```
 
@@ -48,7 +48,7 @@ m1 %a+% m2
 -   `%a*%` (aka `array_mul`)
 -   `%a/%` (aka `array_div`)
 -   `array_pairwise` : Apply any function operating pairwise
--   `is_broadcastable`: Whether a matrix or a dinmension can be broadcasted to a new dimension
+-   `is_broadcastable`: Whether a matrix or a dimension can be broadcasted to a new dimension
 -   `get_pairwise_broadcast_dim`: Common broadcastable dimension given a pair of matrices
 -   `broadcast_to`: broadcast a matrix to a given dimension
 
